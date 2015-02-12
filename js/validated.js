@@ -3,7 +3,7 @@ function isValid() {
 }
 
 $('input').change( function () {
-	alert('change');
+	alert('change event has executed');
 
 	if (!isValid()) {
 		$(this).closest('div.form-group').addClass('has-error');
@@ -12,21 +12,3 @@ $('input').change( function () {
 
 	}
 });
-
-
-// $(document).ready(function(){
-// 	$('input.form-control').change( function () {
-
-// 		// $(this).closest('div.form-group').addClass('has-error');
-// 		//console.log(validateInput());
-
-
-// 		if (!isValid()) {
-// 			$(this).closest('div.form-group').addClass('has-error');
-// 		} else {
-// 			$(this).closest('div.form-group').removeClass('has-error');
-// 		}
-
-// 	});
-
-// });
